@@ -19,9 +19,10 @@
           </span>
         </a>
         <nav class="umpsa-nav" aria-label="Primary navigation">
-          <a href="#tokens" aria-current="page">Tokens</a>
-          <a href="#components">Components</a>
-          <a href="#forms">Forms</a>
+          <a href="{{ route('home') }}#tokens" @if(request()->routeIs('home')) aria-current="page" @endif>Tokens</a>
+          <a href="{{ route('home') }}#components">Components</a>
+          <a href="{{ route('home') }}#forms">Forms</a>
+          <a href="{{ route('login') }}" @if(request()->routeIs('login')) aria-current="page" @endif>Login Mockup</a>
         </nav>
       </div>
     </header>
@@ -32,4 +33,3 @@
   </div>
 </body>
 </html>
-
