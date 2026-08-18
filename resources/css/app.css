@@ -1,2 +1,11 @@
+@import 'tailwindcss';
 @import './umpsa.css';
 
+@source '../views/**/*.blade.php';
+@source '../../app/**/*.php';
+
+@theme {
+  --color-umpsa-blue: #184a92;
+  --color-umpsa-turquoise: #00a2a2;
+  --color-umpsa-yellow: #ffd500;
+}
